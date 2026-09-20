@@ -1,1 +1,6 @@
 @import url(/assets/components/css/header.css);
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
