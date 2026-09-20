@@ -1,0 +1,13 @@
+@import url(/assets/global-css/colours.css);
+
+header {
+  background-color: var(--background);
+}
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100px;
+}

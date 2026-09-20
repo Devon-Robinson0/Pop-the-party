@@ -1,0 +1,18 @@
+:root {
+  /* Page backgrounds */
+  --background: #fbeff7; /* Pale pink: main page background */
+  --surface: #ffffff; /* White: form fields and content panels */
+  --surface-pink: #f8d8ea; /* Soft pink: highlighted sections */
+
+  /* Brand colours */
+  --primary: #171d3a; /* Navy: primary buttons and headings */
+  --accent: #f382c5; /* Bright pink: footer and accents */
+
+  /* Text */
+  --text: #171d3a; /* Navy: main text */
+  --text-muted: #655d66; /* Muted text: supporting information */
+  --text-on-primary: #ffffff; /* White: text on navy buttons */
+
+  /* Borders */
+  --border: #dccfd7; /* Soft border colour */
+}
