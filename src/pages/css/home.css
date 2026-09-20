@@ -6,4 +6,17 @@ body {
 #explore-picks-link {
     display: flex;
     width: 100%; 
+
+    padding: 15px 10px;
+
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.img-holder {
+    overflow: hidden;
+}
+
+.img-holder img {
+    width: 100%;
 }
