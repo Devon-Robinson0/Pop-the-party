@@ -1,22 +1,32 @@
 @import url("../../global-css/colours.css");
 
+body {
+  margin: 0;
+  padding-top: 70px;
+}
+
 #header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
 }
 
 .site-header {
+  height: 70px;
+  box-sizing: border-box;
   background-color: var(--background);
   border-bottom: 1px solid var(--border);
 }
 
 .site-nav {
+  position: relative;
+  height: 100%;
   margin-inline: auto;
-  padding: 12px 20px;
-
+  padding: 0 20px;
+  box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
@@ -25,15 +35,8 @@
 /* Logo sizing */
 .site-logo img {
   display: block;
-  width: 100px;
-  height: auto;
-}
-
-/* Nav Underline */
-.site-links a.active {
-  text-decoration: underline;
-  text-underline-offset: 6px;
-  text-decoration-thickness: 2px;
+  height: 60px;
+  width: auto;
 }
 
 /* Mobile menu button */
@@ -42,17 +45,22 @@
   padding: 8px 12px;
   border: 1px solid var(--border);
   border-radius: 6px;
-
   background-color: transparent;
   color: var(--text);
   font: inherit;
   cursor: pointer;
 }
 
-/* Elements are hidden until Menu is opened */
+/* Mobile links open below the header */
 .site-links {
   display: none;
-  flex-basis: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  padding: 12px 20px;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--border);
   flex-direction: column;
   gap: 4px;
 }
@@ -67,35 +75,30 @@
   text-decoration: none;
 }
 
-/* Desktop View */
+/* Current page underline */
+.site-links a.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+/* Desktop view */
 @media (min-width: 768px) {
   .site-header {
-    min-height: 118px;
-    background-color: var(--background);
-    display: flex;
-    align-items: center;
-    font-size: 24px;
+    font-size: 16px;
   }
 
   .site-nav {
     width: 100%;
     max-width: none;
-    box-sizing: border-box;
     margin: 0;
-    padding: 0 10vw 0 0px;
+    padding: 0 40px 0 20px;
     display: grid;
     grid-template-columns: auto 1fr;
-    align-items: center;
-    font-size: 20px;
   }
 
   .site-logo {
     justify-self: start;
-  }
-
-  .site-logo img {
-    width: 240px;
-    height: auto;
   }
 
   .menu-toggle {
@@ -104,17 +107,18 @@
 
   .site-links,
   .site-nav.is-open .site-links {
+    position: static;
     grid-column: 2;
     justify-self: end;
     display: flex;
     flex-direction: row;
     gap: 48px;
+    padding: 0;
+    border-bottom: none;
   }
 
   .site-links a {
     padding: 12px 0;
-    color: var(--text);
-    text-decoration: none;
     white-space: nowrap;
   }
 }

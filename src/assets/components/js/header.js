@@ -1,27 +1,31 @@
 async function loadHeader() {
   const response = await fetch("../assets/components/header.html");
+
+  if (!response.ok) {
+    throw new Error(`Could not load header: ${response.status}`);
+  }
+
   const headerHTML = await response.text();
-
   document.querySelector("#header").innerHTML = headerHTML;
-}
 
-loadHeader();
+  // Open or close the mobile menu
+  const nav = document.querySelector(".site-nav");
+  const menuButton = document.querySelector(".menu-toggle");
 
-document.addEventListener("click", (event) => {
-  const button = event.target.closest(".menu-toggle");
+  menuButton.addEventListener("click", () => {
+    nav.classList.toggle("is-open");
+  });
 
-  if (!button) return;
-
-  const nav = button.closest(".site-nav");
-  nav.classList.toggle("is-open");
-
+  // Highlight the current page
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
   document.querySelectorAll(".site-links a").forEach((link) => {
     const linkPage = new URL(link.href).pathname.split("/").pop();
 
-    if (linkPage === currentPage) {
-      link.classList.add("active");
-    }
+    link.classList.toggle("active", linkPage === currentPage);
   });
+}
+
+loadHeader().catch((error) => {
+  console.error("Header failed to load:", error);
 });
