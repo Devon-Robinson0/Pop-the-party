@@ -6,3 +6,12 @@ async function loadHeader() {
 }
 
 loadHeader();
+
+document.addEventListener("click", (event) => {
+  const button = event.target.closest(".menu-toggle");
+
+  if (!button) return;
+
+  const nav = button.closest(".site-nav");
+  nav.classList.toggle("is-open");
+});
