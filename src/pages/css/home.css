@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-size: var(--font-normal-size);
 }
 
 main {
@@ -35,21 +36,27 @@ main {
 }
 
 #meet-eve-img {
-    width: 30%;
+    width: 40%;
 }
 
 #meet-eve-content {
     display: flex;
     flex-direction: column;
-
+    background-color: red;
+    width: 60%;
     margin-left: 1rem;
     margin-bottom: 2rem;
 
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 #meet-eve-content h2 {
     margin: 0;
+    margin-bottom: 1rem;
+}
+
+#meet-eve-content p {
+    margin-bottom: auto;
 }
 
 .img-holder {
