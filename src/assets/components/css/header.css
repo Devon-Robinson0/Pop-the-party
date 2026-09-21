@@ -1,5 +1,11 @@
 @import url("../../global-css/colours.css");
 
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
 .site-header {
   background-color: var(--background);
   border-bottom: 1px solid var(--border);
@@ -21,6 +27,13 @@
   display: block;
   width: 100px;
   height: auto;
+}
+
+/* Nav Underline */
+.site-links a.active {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
 }
 
 /* Mobile menu button */
@@ -66,13 +79,14 @@
 
   .site-nav {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
-
+    max-width: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 10vw 0 0px;
     display: grid;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
+    font-size: 20px;
   }
 
   .site-logo {
@@ -80,7 +94,7 @@
   }
 
   .site-logo img {
-    width: 240;
+    width: 240px;
     height: auto;
   }
 
@@ -91,6 +105,7 @@
   .site-links,
   .site-nav.is-open .site-links {
     grid-column: 2;
+    justify-self: end;
     display: flex;
     flex-direction: row;
     gap: 48px;

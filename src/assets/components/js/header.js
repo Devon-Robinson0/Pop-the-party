@@ -14,4 +14,14 @@ document.addEventListener("click", (event) => {
 
   const nav = button.closest(".site-nav");
   nav.classList.toggle("is-open");
+
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+  document.querySelectorAll(".site-links a").forEach((link) => {
+    const linkPage = new URL(link.href).pathname.split("/").pop();
+
+    if (linkPage === currentPage) {
+      link.classList.add("active");
+    }
+  });
 });
