@@ -1,4 +1,4 @@
-@import url("/assets/global-css/colours.css");
+@import url("../assets/global-css/colours.css");
 
 .site-header {
   background-color: var(--background);
@@ -80,7 +80,7 @@
   }
 
   .site-logo img {
-    width: 240px;
+    width: 240;
     height: auto;
   }
 
