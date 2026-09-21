@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-size: var(--font-normal-size);
 }
 
 main {
@@ -10,10 +11,17 @@ main {
     font-weight: 700;
 }
 
-#explore-picks-link {
+.explore-btn-holder {
+    display: flex;
+}
+
+.explore-btn-holder a {
     display: flex;
     box-sizing: border-box;
-    width: 100%; 
+
+    align-items: center;
+
+    width: auto; 
     margin-bottom: 1.5rem;
 
     color: var(--background);
@@ -23,6 +31,14 @@ main {
     background-color: var(--primary);
     border-radius: 10px;
     cursor: pointer;
+}
+
+#explore-picks-link {
+    width: 100%;
+}
+
+#view-gallery-link {
+    display: none;
 }
 
 #home-main-img {
@@ -35,21 +51,27 @@ main {
 }
 
 #meet-eve-img {
-    width: 30%;
+    width: 40%;
 }
 
 #meet-eve-content {
     display: flex;
     flex-direction: column;
 
+    width: 60%;
     margin-left: 1rem;
     margin-bottom: 2rem;
 
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 #meet-eve-content h2 {
     margin: 0;
+    margin-bottom: 1rem;
+}
+
+#meet-eve-content p {
+    margin-bottom: auto;
 }
 
 .img-holder {
@@ -58,4 +80,73 @@ main {
 
 .img-holder img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#meet-eve-container-desktop {
+    display: none;
+}
+
+
+@media (min-width: 768px) {
+    main {
+        padding: 0 40px;
+    }
+
+    h1 {
+        width: 50%;
+        font-size: 4.5rem;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    #home-main-img {
+        height: 80vh;
+    }
+
+    .explore-btn-holder {
+        margin-bottom: 20px;
+    }
+
+    #explore-picks-link {
+        width: 220px;
+        margin-right: 10px;
+    }
+
+    #view-gallery-link {
+        display: flex;
+        width: 200px;
+        background-color: inherit;
+        border: 2px solid var(--text-muted);
+        color: var(--text-muted);
+    }
+
+    #meet-eve-container {
+        display: none;
+    }
+
+    #meet-eve-container-desktop {
+        display: flex;
+        width: calc(100%);
+        padding: 40px;
+
+        margin-inline: -40px;
+
+        background-color: var(--surface-pink);
+    }
+
+    #meet-eve-container-desktop .img-holder {
+        width: 20%;
+        height: 400px;
+    }
+
+    #meet-eve-container-desktop .img-holder img {
+        object-fit: cover;
+        object-position: top;
+    }
 }
