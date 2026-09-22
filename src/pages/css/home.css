@@ -24,17 +24,20 @@ main {
     width: auto; 
     margin-bottom: 1.5rem;
 
-    color: var(--background);
-
+    color: white;
     padding: 15px 10px;
 
-    background-color: var(--primary);
     border-radius: 10px;
     cursor: pointer;
 }
 
 #explore-picks-link {
     width: 100%;
+    background-color: var(--navy-btn-bg);
+}
+
+#explore-pick-link:hover {
+    background-color: var(--navy-btn-bg-hover);
 }
 
 #view-gallery-link {
@@ -133,7 +136,7 @@ main {
     #meet-eve-container-desktop {
         display: flex;
         width: calc(100%);
-        padding: 40px;
+        padding: 20px 40px;
 
         margin-inline: -40px;
 
@@ -141,12 +144,32 @@ main {
     }
 
     #meet-eve-container-desktop .img-holder {
-        width: 20%;
-        height: 400px;
+        flex-shrink: 0;
+        width: 250px;
+        height: 300px;
+
+        margin-right: 40px;
     }
 
     #meet-eve-container-desktop .img-holder img {
         object-fit: cover;
         object-position: top;
+    }
+
+    #meet-eve-container-desktop h2, 
+    #meet-eve-container-desktop a {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    #meet-eve-container-desktop p {
+        margin: 0;
+        margin-bottom: 80px;
+    }
+
+    #meet-eve-content-desktop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

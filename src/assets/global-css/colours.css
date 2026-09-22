@@ -15,4 +15,9 @@
 
   /* Borders */
   --border: #dccfd7; /* Soft border colour */
+
+  --navy-btn-bg: #171C3A;
+  --navy-btn-bg-hover: #30385E;
+  --subtle-btn-color: #171C3A;
+  --subtle-btn-bg-hover: #FFD6EA;
 }

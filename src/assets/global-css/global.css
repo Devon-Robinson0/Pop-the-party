@@ -11,6 +11,22 @@ a {
   color: inherit;
 }
 
+a.arrow {
+    font-weight: 700;
+
+}
+
+a.arrow::after {
+    content: ">>";
+
+    transition: transform 0.3s ease;
+}
+
+a.arrow:hover::after {
+    display: inline-block;
+    transform: translateX(50%);
+}
+
 h1 {
     font-size: 2.25rem;
 }
