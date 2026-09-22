@@ -1,0 +1,19 @@
+.confetti-section {
+  position: relative;
+  isolation: isolate;
+}
+
+.confetti-canvas {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: block;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .confetti-canvas {
+    display: none;
+  }
+}
