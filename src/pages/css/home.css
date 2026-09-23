@@ -36,12 +36,21 @@ main {
     background-color: var(--navy-btn-bg);
 }
 
-#explore-pick-link:hover {
+#explore-picks-link:hover {
     background-color: var(--navy-btn-bg-hover);
 }
 
 #view-gallery-link {
     display: none;
+    width: 200px;
+    background-color: var(--background);
+
+    color: var(--subtle-btn-color);
+    border: 2px solid var(--subtle-btn-color);
+}
+
+#view-gallery-link:hover {
+    background-color: var(--subtle-btn-bg-hover);
 }
 
 #home-main-img {
@@ -123,10 +132,6 @@ main {
 
     #view-gallery-link {
         display: flex;
-        width: 200px;
-        background-color: inherit;
-        border: 2px solid var(--text-muted);
-        color: var(--text-muted);
     }
 
     #meet-eve-container {
@@ -171,5 +176,9 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    #meet-eve-content-desktop a {
+        width: 200px;
     }
 }
