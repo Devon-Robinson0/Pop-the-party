@@ -7,6 +7,7 @@
   /* Brand colours */
   --primary: #171d3a; /* Navy: primary buttons and headings */
   --accent: #f382c5; /* Bright pink: footer and accents */
+  --heading-accent: #ab346f;
 
   /* Text */
   --text: #171d3a; /* Navy: main text */

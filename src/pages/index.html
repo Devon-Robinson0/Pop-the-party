@@ -1,72 +1,104 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pop The Party Home Page</title>
-    <link rel="stylesheet" href="../assets/global-css/global.css" />
-    <link rel="stylesheet" href="../assets/components/css/footer.css" />
-    <link rel="stylesheet" href="../assets/components/css/confetti.css" />
-    <link rel="stylesheet" href="./css/home.css" />
-  </head>
-  <body>
-    <div id="header"></div>
-    <main class="confetti-section">
-      <p id="location-text">Nelson, New Zealand</p>
-      <h1>Handmade with love, handcrafted for your party</h1>
-      <!-- Maybe rename this button -->
-      <div class="explore-btn-holder">
-        <a id="explore-picks-link" href="pick-your-pop.html"
-          >Explore Pop Picks</a
-        >
-        <a id="view-gallery-link" href="gallery.html">View Gallery</a>
-      </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pop The Party Home Page</title>
+        <link rel="stylesheet" href="../assets/global-css/global.css" />
+        <link rel="stylesheet" href="../assets/components/css/footer.css" />
+        <link rel="stylesheet" href="../assets/components/css/confetti.css" />
+        <link rel="stylesheet" href="./css/home.css" />
+    </head>
+    <body>
+        <div id="header"></div>
+        <main>
+            <section class="confetti-section">
+                <div class="header-holder">
+                    <p>A LITTLE JOY, MADE IN NELSON</p>
+                    <h1>Handmade with love,</h1>
+                    <h2 class="pink">handcrafted for your party.</h2>
+                    <p class="subtle-text">Cake pops & cakesicles made for your kind of celebration</p>
+                    <!-- Maybe rename this button -->
+                    <div class="explore-btn-holder">
+                        <a id="explore-picks-link" href="pick-your-pop.html"
+                            >Explore Pop Picks<img src="../assets/icons/outward-arrow-icon-white.svg" /></a
+                        >
+                        <a id="view-gallery-link" href="gallery.html">View Gallery</a>
+                    </div>
+                </div>
+                
+                <div id="carosel"></div>
 
-      <div id="home-main-img" class="img-holder">
-        <img
-          src="../assets/icons/home-img1.webp"
-          href="Cakesicles laid out on a board"
-        />
-      </div>
+                <div class="divider">
+                    <p>HANDMADE IN SMALL BATCHES</p>
+                    <a href="#meet-eve">MEET THE MAKER &downarrow;</a>
+                </div>
+            </section>
+            
+            <section>
+                <p>FIND YOUR PARTY FAVOURITE</p>
+                <h2>Small treats. Big smiles</h2>
+                <a class="explore-link" href="pick-your-pop.html">All Pop Picks & Pricing<img src="../assets/icons/outward-arrow-icon-primary.svg" /></a>
 
-      <div id="meet-eve-container">
-        <div id="meet-eve-img" class="img-holder">
-          <img
-            src="../assets/icons/meet-eve-img.webp"
-            alt="Eve handing out a cakesicle to a child"
-          />
-        </div>
-        <div id="meet-eve-content">
-          <h2>Meet Eve</h2>
-          <p>Very short personal intro</p>
-          <a href="about.html">Read more >></a>
-        </div>
-      </div>
 
-      <div id="meet-eve-container-desktop">
-        <div id="meet-eve-img-desktop" class="img-holder">
-          <img
-            src="../assets/icons/meet-eve-img.webp"
-            alt="Eve handing out a cakesicle to a child"
-          />
-        </div>
-        <div id="meet-eve-content-desktop">
-          <h2>Made with a personal touch</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            distinctio, in consectetur voluptatibus nam eos, pariatur omnis
-            placeat sit iusto suscipit autem dignissimos asperiores et odio
-            expedita nemo possimus harum.
-          </p>
-          <a href="about.html" class="arrow">Meet Eve </a>
-        </div>
-      </div>
-    </main>
+                <article class="pop-type">
+                    <div id="img-grid">
+                        <div class="img-cell small">
+                            <img src="../assets/gallery-imgs/20260712_150538.jpg" />
+                        </div>
+                        <div class="img-cell big">
+                            <img src="../assets/gallery-imgs/20260710_110829.jpg" />
+                        </div>
+                        <div class="img-cell big">
+                            <img src="../assets/gallery-imgs/20260603_080325.jpg" />
+                        </div>
+                        <div class="img-cell small">
+                            <img src="../assets/gallery-imgs/20260510_154801.jpg" />
+                        </div>
+                    </div>
 
-    <div id="footer"></div>
+                    <div class="title-price-container">
+                        <h2>Cake pops</h2>
+                        <p>from $4</p>
+                    </div>
+                    <p>Bite-sized cake, a chocolate coating and plenty of personality.</p>
+                    <a class="explore-link">Explore cake pops <img src="../assets/icons/outward-arrow-icon-primary.svg" /></a>
+                </article>
 
-    <script src="../assets/components/js/header.js"></script>
-    <script src="../assets/components/js/footer.js"></script>
-    <script src="../assets/components/js/confetti.js"></script>
-  </body>
+                <article class="pop-type">
+                    <div class="img-holder">
+                        <img src="../assets/gallery-imgs/1000052634.jpg" />
+                    </div>
+
+                    <div class="title-price-container">
+                        <h2>Classic cakesicles</h2>
+                        <p>from $6</p>
+                    </div>
+                    <p>Chocolate-coated cakesicles with drizzle, sprinkles or a marble finish</p>
+                    <a class="explore-link">Explore cakesicles <img src="../assets/icons/outward-arrow-icon-primary.svg" /></a>
+                </article>
+
+                <article class="pop-type">
+                    <div class="img-holder">
+                        <img src="../assets/gallery-imgs/20260718_145716.jpg" />
+                    </div>
+
+                    <div class="title-price-container">
+                        <h2>Custom cakesicles</h2>
+                        <p>from $6</p>
+                    </div>
+                    <p>Your colours, your theme and all the little details that make it yours.</p>
+                    <a class="explore-link">Explore cakesicles <img src="../assets/icons/outward-arrow-icon-primary.svg" /></a>
+                </article>
+
+                <p>Minimum order: 6</p>
+            </section>
+        </main>
+
+        <div id="footer"></div>
+
+        <script src="../assets/components/js/header.js"></script>
+        <script src="../assets/components/js/footer.js"></script>
+        <script src="../assets/components/js/confetti.js"></script>
+    </body>
 </html>

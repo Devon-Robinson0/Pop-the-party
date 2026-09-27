@@ -1,0 +1,27 @@
+#search-filters {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.filter {
+    border: 2px solid var(--subtle-btn-color);
+    border-radius: 10px;
+
+    color: var(--subtle-btn-color);
+
+    padding: 10px 15px;
+    background-color: var(--background);
+}
+
+.filter.selected {
+    background-color: var(--primary);
+    color: var(--text-on-primary);
+}
+
+.gallery-item h2 {
+    line-height: 2rem;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+}

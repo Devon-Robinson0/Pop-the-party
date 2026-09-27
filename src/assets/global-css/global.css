@@ -1,6 +1,7 @@
 @import url("../components/css/header.css");
 @import url("./colours.css");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
     background-color: var(--background);
@@ -31,13 +32,45 @@ a.arrow:hover::after {
 h1, h2, h3 {
     font-family: "Shrikhand", serif;
     font-weight: 400;
-    line-height: 5rem;
-}
-
-h1 {
-    font-size: 2.25rem;
-}
-
-h2 {
+    line-height: 2rem;
     font-size: 2rem;
+
+    color: var(--primary);
+}
+
+h2.pink {
+    color: var(--heading-accent);
+}
+
+p {
+    font-size: 14px;
+}
+
+p.subtle-text {
+    color: var(--text-muted);
+}
+
+main {
+    padding: 0 10px;
+    margin-top: 30px;
+}
+
+svg {
+    fill: var(--primary);
+}
+
+p, span, a, label {
+    font-family: "poppins", sans-serif;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    h1, h2, h3 {
+        line-height: 5rem;
+        font-size: 3rem;
+    }
+
+    main {
+        padding: 0 40px;
+    }
 }
