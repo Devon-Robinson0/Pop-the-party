@@ -93,10 +93,6 @@ h3 {
     border-radius: 0;
 }
 
-#view-gallery-link:hover {
-    background-color: var(--subtle-btn-bg-hover);
-}
-
 #pop-types-container {
     display: flex;
     flex-direction: column;
@@ -276,6 +272,11 @@ h3 {
 
     #view-gallery-link {
         display: flex;
+        font-weight: 500;
+        padding: 0;
+    }
+    #view-gallery-link:hover {
+        color: var(--heading-accent);
     }
 
     #meet-eve-section {

@@ -254,6 +254,38 @@ input[name="coating"]:checked::after {
     border-radius: 10px;
 }
 
+#steps-section .eyebrow {
+    margin: 0;
+    margin-top: 40px;
+}
+#steps-section h3 {
+    margin: 20px 0;
+}
+#steps-section hr {
+    background-color: var(--border);
+    border: none;
+
+    width: 100%;
+    height: 1px;
+}
+#steps-section .purple-title {
+    color: var(--heading-accent);
+    font-weight: 600;
+    font-size: 16px;
+}
+#steps-section .title {
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    margin: 10px 0;
+}
+
+#steps-container {
+    display: flex;
+    flex-direction: column;
+}
+
 @media (min-width: 768px) {
     #pop-types-container {
         display: flex;
@@ -263,9 +295,93 @@ input[name="coating"]:checked::after {
     #pop-types-container .pop-type {
         flex: 1;
     }
+    .pop-type .img-holder {
+        height: 350px;
+    }
 
     #img-grid {
         height: 350px;
         margin-top: 0;
     }
+    
+    #min-order-container {
+        justify-content: center;
+        gap: 10px;
+    }
+    #min-order-container #min-order-text {
+        padding: 5px 10px;
+    }
+    #min-order-container p {
+        font-size: 14px;    
+    }
+
+    .pop-price {
+        font-size: 32px;
+    }
+
+    .start-prices {
+        margin-bottom: 80px;
+    }
+
+    #make-your-own {
+        display: grid;
+        grid-template-columns: 1.1fr .9fr;
+        padding: 40px 150px;
+
+        column-gap: 40px;
+    }
+
+    .numbered-list h3 {
+        margin: 0;
+        line-height: 2rem;
+    }
+
+    .display-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+    }
+    .display-container .img-holder {
+        flex: 1;
+        height: auto;
+        position: relative;
+    }
+    .display-container .img-holder img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #steps-section .main-title {
+        margin: 10px 0;
+    }
+
+    #steps-container {
+        flex-direction: row;
+        gap: 20px;
+    }
+    #steps-container h3 {
+        margin: 0;
+        line-height: 2rem;
+    }
+    #steps-container > div {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        height: 220px;
+    }
+    #steps-container > div .muted-text {
+        margin-bottom: auto;
+    }
+    #steps-container .purple-title {
+        margin-bottom: 0;
+    }
+    #steps-container .title {
+        margin-bottom: 0;
+    }
+    
 }

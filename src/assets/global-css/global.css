@@ -14,22 +14,6 @@ a {
   color: inherit;
 }
 
-a.arrow {
-    font-weight: 700;
-
-}
-
-a.arrow::after {
-    content: ">>";
-
-    transition: transform 0.3s ease;
-}
-
-a.arrow:hover::after {
-    display: inline-block;
-    transform: translateX(50%);
-}
-
 h1, h2, h3 {
     font-family: "Shrikhand", serif;
     font-weight: 400;
@@ -37,6 +21,20 @@ h1, h2, h3 {
     font-size: 2rem;
 
     color: var(--primary);
+}
+
+a, 
+input[type="radio"], 
+input[type="checkbox"], 
+label,
+select {
+    cursor: pointer;
+}
+
+h1 span {
+    color: var(--heading-accent);
+    font-size: 3.8rem;
+    font-family: "shrikhand", serif;
 }
 
 h2.pink {
@@ -139,8 +137,15 @@ p#breadcrumb {
     color: var(--primary);
     font-weight: 500;
 }
-.primary-link img {
+.primary-link svg {
     margin-left: 10px;
+}
+.primary-link:hover {
+    background-color: var(--primary);
+    color: var(--surface);
+}
+.primary-link:hover svg {
+    fill: var(--surface);
 }
 
 @media (min-width: 768px) {
@@ -150,7 +155,7 @@ p#breadcrumb {
     }
 
     p, span, a, label {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     h2.pink {
