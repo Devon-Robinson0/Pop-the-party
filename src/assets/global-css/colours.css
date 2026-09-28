@@ -9,6 +9,9 @@
   --accent: #f382c5; /* Bright pink: footer and accents */
   --heading-accent: #ab346f;
 
+  --pink-bg: #f4d9ea;
+  --pink-on-pink: #c9a9bc;
+
   /* Text */
   --text: #171d3a; /* Navy: main text */
   --text-muted: #655d66; /* Muted text: supporting information */

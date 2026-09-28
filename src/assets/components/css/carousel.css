@@ -1,0 +1,207 @@
+.carousel {
+    max-width: 1170px;
+    margin: 15px auto 0;
+    padding: 0 15px;
+    position: relative;
+    overflow: hidden;
+    outline-offset: -3px;
+
+    color: var(--text, #302536);
+    font-family: inherit;
+}
+
+.carousel,
+.carousel * {
+    box-sizing: border-box;
+}
+
+.photo-stage {
+    height: 288px;
+    position: relative;
+    perspective: 1100px;
+    touch-action: pan-y;
+}
+
+.photo-card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    width: 280px;
+    height: 236px;
+    max-width: none;
+    display: block;
+    object-fit: cover;
+
+    border: 6px solid white;
+    border-radius: 12px;
+    box-shadow: 0 14px 26px #3b173424;
+
+    transition:
+        transform 0.65s ease,
+        opacity 0.65s ease;
+
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Centre image */
+.photo-card[data-position="0"] {
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+/* Immediately left */
+.photo-card[data-position="-1"] {
+    transform:
+        translate(calc(-50% - 257px), -50%)
+        rotateY(27deg)
+        scale(0.86);
+
+    z-index: 4;
+}
+
+/* Immediately right */
+.photo-card[data-position="1"] {
+    transform:
+        translate(calc(-50% + 257px), -50%)
+        rotateY(-27deg)
+        scale(0.86);
+
+    z-index: 4;
+}
+
+/* Far left */
+.photo-card[data-position="-2"] {
+    transform:
+        translate(calc(-50% - 460px), -50%)
+        rotateY(40deg)
+        scale(0.68);
+
+    z-index: 3;
+}
+
+/* Far right */
+.photo-card[data-position="2"] {
+    transform:
+        translate(calc(-50% + 460px), -50%)
+        rotateY(-40deg)
+        scale(0.68);
+
+    z-index: 3;
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+}
+
+.carousel-controls button {
+    display: grid;
+    place-items: center;
+
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    border: 1px solid #c9b9c5;
+    border-radius: 50%;
+    background: transparent;
+    color: inherit;
+
+    font-family: inherit;
+    font-size: 23px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.carousel-controls button:hover {
+    background: var(--primary, #303a60);
+    color: white;
+}
+
+.carousel:focus-visible,
+.carousel-controls button:focus-visible {
+    outline: 3px solid #a32777;
+    outline-offset: -3px;
+}
+
+.carousel-controls p {
+    margin: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.carousel .separator {
+    margin: 0 9px;
+    color: var(--text-muted, #756b76);
+}
+
+.carousel-caption {
+    margin: 10px 0 25px;
+    font-size: 13px;
+    text-align: center;
+    color: var(--text-muted, #756b76);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .photo-card {
+        width: 260px;
+        height: 225px;
+    }
+
+    .photo-card[data-position="-1"] {
+        transform:
+            translate(calc(-50% - 235px), -50%)
+            rotateY(27deg)
+            scale(0.85);
+    }
+
+    .photo-card[data-position="1"] {
+        transform:
+            translate(calc(-50% + 235px), -50%)
+            rotateY(-27deg)
+            scale(0.85);
+    }
+
+    .photo-card[data-position="-2"],
+    .photo-card[data-position="2"] {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .photo-stage {
+        height: 257px;
+    }
+
+    .photo-card {
+        width: 228px;
+        height: 211px;
+    }
+
+    .photo-card[data-position="-1"] {
+        transform:
+            translate(calc(-50% - 203px), -50%)
+            rotateY(30deg)
+            scale(0.82);
+    }
+
+    .photo-card[data-position="1"] {
+        transform:
+            translate(calc(-50% + 203px), -50%)
+            rotateY(-30deg)
+            scale(0.82);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .carousel .photo-card {
+        transition: none;
+    }
+}

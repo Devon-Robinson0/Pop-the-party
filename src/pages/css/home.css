@@ -7,35 +7,23 @@ section {
     margin-bottom: 50px;
 }
 
-h2 {
-    font-size: 1.6rem;
+h3 {
+    margin: 10px 0;
 }
 
-.header-holder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 10px;
-}
-
-.header-holder h1,
-.header-holder h2 {
+.eyebrow {
     margin: 0;
-    margin-bottom: 1rem;
-
-    width: 100%;
-    text-align: center;
 }
 
-.header-holder h2 {
-    font-size: 1.6rem;
-    margin-bottom: 0;
+.confetti-section {
+    margin: 0;
 }
-
-#carosel {
-    width: 100%;
-    height: 40vh;
-    background-color: black;
+.confetti-section .header-holder {
+    margin: 0 10px;
+}
+.confetti-section .divider {
+    margin: 0 10px;
+    margin-bottom: 50px;
 }
 
 .divider {
@@ -55,6 +43,11 @@ h2 {
 }
 .divider a {
     font-weight: 700;
+}
+
+.type-title {
+    display: flex;
+    flex-direction: column;
 }
 
 .explore-btn-holder {
@@ -104,22 +97,9 @@ h2 {
     background-color: var(--subtle-btn-bg-hover);
 }
 
-.explore-link {
+#pop-types-container {
     display: flex;
-    align-items: center;
-    border-bottom: 1px solid var(--primary);
-    padding-bottom: 8px;
-
-    width: fit-content;
-    font-weight: 600;
-}
-
-.explore-link img {
-    margin-left: 10px;
-}
-
-#home-main-img {
-    margin-bottom: 1.5rem;
+    flex-direction: column;
 }
 
 #meet-eve-container {
@@ -151,18 +131,6 @@ h2 {
     margin-bottom: auto;
 }
 
-.img-holder {
-    overflow: hidden;
-}
-
-.img-holder img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
 #meet-eve-container-desktop {
     display: none;
 }
@@ -179,7 +147,6 @@ h2 {
     overflow: hidden;
     border-radius: 5px;
 }
-
 #img-grid .img-cell {
     overflow: hidden;
 }
@@ -208,8 +175,6 @@ h2 {
 
     margin: 10px 0 0 0;
 }
-
-
 .title-price-container h2 {
     margin: 0;
     font-family: "poppins", sans-serif;
@@ -222,10 +187,42 @@ h2 {
 
 .pop-type {
     margin-bottom: 25px;
+    transition: transform 0.3s ease;
 }
-
 .pop-type .img-holder {
     border-radius: 5px;
+}
+.pop-type:hover {
+    transform: scale(1.05);
+}
+
+#meet-eve-section {
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--pink-bg);
+    padding: 20px;
+    margin: 0;
+}
+
+#meet-eve-section .img-holder {
+    border-radius: 50% 50% 0 0;
+    height: 350px;
+    transform-origin: top center;
+}
+
+#meet-eve-section .img-holder img {
+    object-position: top;
+}
+
+#meet-eve-section h2 {
+    margin: 10px 0;
+}
+
+.big-p {
+    font-weight: 500;
+    font-size: 12px;
+    margin-top: 25px;
 }
 
 @media (min-width: 768px) {
@@ -234,8 +231,38 @@ h2 {
         margin-bottom: 20px;
     }
 
-    #home-main-img {
-        height: 80vh;
+    .confetti-section .divider {
+        margin: 0 150px;
+        margin-bottom: 50px;
+    }
+    .divider p {
+        font-size: 12px;
+    }
+
+    #pop-types-container {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .img-holder {
+        height: 350px;
+    }
+    #img-grid {
+        height: 350px;
+        margin-top: 0;
+    }
+    #pop-types-container .pop-type {
+        flex: 1;
+    }
+
+    .type-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .type-title a {
+        margin: 25px 0;
     }
 
     .explore-btn-holder {
@@ -251,51 +278,20 @@ h2 {
         display: flex;
     }
 
-    #meet-eve-container {
-        display: none;
+    #meet-eve-section {
+        flex-direction: row;
+        padding: 80px 250px;
     }
-
-    #meet-eve-container-desktop {
-        display: flex;
-        width: calc(100%);
-        padding: 20px 40px;
-
-        margin-inline: -40px;
-
-        background-color: var(--surface-pink);
-    }
-
-    #meet-eve-container-desktop .img-holder {
+    #meet-eve-section .img-holder {
         flex-shrink: 0;
-        width: 250px;
-        height: 300px;
-
-        margin-right: 40px;
+        width: 400px;
+        height: 450px;
+        border-radius: 40% 40% 0 0;
+        margin-right: 80px;
     }
-
-    #meet-eve-container-desktop .img-holder img {
-        object-fit: cover;
-        object-position: top;
-    }
-
-    #meet-eve-container-desktop h2, 
-    #meet-eve-container-desktop a {
-        margin: 0;
-        margin-bottom: 20px;
-    }
-
-    #meet-eve-container-desktop p {
-        margin: 0;
-        margin-bottom: 80px;
-    }
-
-    #meet-eve-content-desktop {
+    #meet-eve-section .meet-eve-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
-    }
-
-    #meet-eve-content-desktop a {
-        width: 200px;
     }
 }
