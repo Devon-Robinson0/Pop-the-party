@@ -17,8 +17,8 @@ a {
 h1, h2, h3 {
     font-family: "Shrikhand", serif;
     font-weight: 400;
-    line-height: 2rem;
-    font-size: 2rem;
+    line-height: 2.2rem;
+    font-size: 2.2rem;
 
     color: var(--primary);
 }
@@ -33,8 +33,8 @@ select {
 
 h1 span {
     color: var(--heading-accent);
-    font-size: 3.8rem;
     font-family: "shrikhand", serif;
+    font-size: 2.2rem;
 }
 
 h2.pink {
@@ -147,10 +147,23 @@ p#breadcrumb {
 .primary-link:hover svg {
     fill: var(--surface);
 }
+.primary-link.dark {
+    color: var(--surface);
+    border-color: var(--primary);
+    background-color: var(--primary);
+}
+.primary-link.dark svg {
+    fill: var(--surface);
+}
 
 @media (min-width: 768px) {
     h1, h2, h3 {
         line-height: 4.5rem;
+        font-size: 3.8rem;
+    }
+    h1 span {
+        color: var(--heading-accent);
+        font-family: "shrikhand", serif;
         font-size: 3.8rem;
     }
 

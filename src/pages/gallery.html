@@ -5,36 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pop the Party Gallery</title>
     <link rel="stylesheet" href="../assets/global-css/global.css" />
-    <link rel="stylesheet" href="../assets/components/css/confetti.css">
-    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="./css/gallery.css" />
 </head>
 <body>
     <div id="header"></div>    
 
-    <main class="confetti-section">
-        <h1>Party inspiration</h1>
-        <p>Sweet creations inspired by your parties, ideas and favorite colours in Nelson and Tasman.</p>
+    <main>
+        <section>
+            <p id="breadcrumb"><a href="index.html">Home</a> / Gallery</p>
+            <div class="header-holder">
+                <p class="eyebrow">THE SWEETEST KIND OF INSPIRATION</p>
+                <h1>A little colour.<br />
+                    <span>A lot of possibility</span>
+                </h1>
+                <p class="subtle-text">Real creations, made for real celebrations. Find a favourite detail, a colour combination, or the start of your own idea.</p>
+            </div>  
+        </section>
 
-        <div id="search-filters">
-            <button class="filter selected">All</button>
-            <button class="filter">Cake pops</button>
-            <button class="filter">Classic cakesicles</button>
-            <button class="filter">Cake pops</button>
-            <button class="filter">Custom cakesicles</button>
-            <button class="filter selected">Test</button>
-        </div>
+        <section>
+            <div id="filter-and-text-container">
+                <div class="filters-container">
+                    <input id="all-filter" type="radio" name="filter" value="all" checked />
+                    <label for="all-filter">All</label>
 
-        <div id="gallery">
-            <div class="gallery-item">
-                <img src="" />
-                <h2>Design 1</h2>
-                <a class="arrow">Enquire about this </a>
+                    <input id="animals-filter" type="radio" name="filter" value="animals" />
+                    <label for="animals-filter">Animals</label>
+
+                    <input id="celebrations-filter" type="radio" name="filter" value="celebrations" />
+                    <label for="celebrations-filter">Celebrations</label>
+
+                    <input id="characters-filter" type="radio" name="filter" value="characters" />
+                    <label for="characters-filter">Characters</label>
+
+                    <input id="classic-filter" type="radio" name="filter" value="classic" />
+                    <label for="classic-filter">Classic</label>
+
+                    <input id="marbled-filter" type="radio" name="filter" value="marbled" />
+                    <label for="marbled-filter">Marbled</label>
+
+                    <input id="nature-filter" type="radio" name="filter" value="nature" />
+                    <label for="nature-filter">Nature</label>
+
+                    <input id="seaside-filter" type="radio" name="filter" value="seaside" />
+                    <label for="seaside-filter">Seaside</label>
+                </div>
+
+                <p class="muted-text"><span id="photo-no">18</span> Photos</p>
             </div>
-        </div>
 
+            <hr />
+
+            <ul id="gallery">
+                
+            </ul>
+        </section>
+
+        <section id="spotted-something">
+            <h2>Spotted something you love?</h2>
+            <p class="muted-text">Choose a gallery photo to include its name in your enquiry.</p>
+
+            <a class="primary-link dark" href="contact.html">Let's make it yours <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
+        </section>
+
+        <dialog id="gallery-modal">
+            <div class="top-nav">
+                <button id="close-modal">x</button>
+            </div>
+            <div id="modal-img-holder" class="img-holder">
+                <img src="../assets/gallery-imgs/1000043868-1.jpg" />
+            </div>
+            <div class="content">
+                <h2 id="modal-title">Name of photo</h2>
+                <button class="primary-link dark">Enquire about this design <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
+                <p class="muted-text">Share the details you love. Eve will confirm what’s possible for your order.</p>
+            </div>
+        </dialog>
     </main>
 
     <script src="../assets/components/js/header.js"></script>
-    <script src="../assets/components/js/confetti.js"></script>
+    <script src="./js/gallery.js"></script>
 </body>
 </html>

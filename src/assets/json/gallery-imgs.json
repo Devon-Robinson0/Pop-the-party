@@ -1,0 +1,415 @@
+[
+  {
+    "id": 1,
+    "filename": "cakesicles-nelson.png",
+    "name": "Sprinkle Circle",
+    "alt": "Seven white cakesicles with colourful sprinkles arranged in a circle on a marble-patterned plate.",
+    "filter": "classic"
+  },
+  {
+    "id": 2,
+    "filename": "672231519_18086411027100344_1158253915497016948_n.webp",
+    "name": "Party Palette",
+    "alt": "A tray of cakesicles with pink, blue and orange marbling, chocolate coatings, drizzle and sprinkles.",
+    "filter": "classic"
+  },
+{
+"id": 3,
+"filename": "20260702_224841.jpg",
+"name": "Olympian Delights",
+"alt": "Cream-coloured cakesicles with round picture toppers depicting Greek deities, including Apollo and Athena, and golden sprinkles arranged in a row.",
+"filter": "characters"
+},
+{
+"id": 4,
+"filename": "20260619_143220.jpg",
+"name": "Pink Pony Parade",
+"alt": "Four pink and cream cakesicles decorated with black horse-themed designs and drizzle.",
+"filter": "animals"
+},
+  {
+    "id": 5,
+    "filename": "20260607_151335.jpg",
+    "name": "Sweet Scenic Escape",
+    "alt": "Two white cake pops with pink and red sprinkles held in front of a lake and green hills.",
+    "filter": "classic"
+  },
+  {
+    "id": 6,
+    "filename": "20260510_154304.jpg",
+    "name": "Butterfly Garden",
+    "alt": "Two pale green heart-shaped treats on wooden sticks, decorated with white drizzle, a pink butterfly and a yellow flower.",
+    "filter": "nature"
+  },
+  {
+    "id": 7,
+    "filename": "20260702_115401.jpg",
+    "name": "Forty and Fabulous",
+    "alt": "Purple and blue marbled heart-shaped cake pops decorated with gold number 40 toppers.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 8,
+    "filename": "1000043868-1.jpg",
+    "name": "Seaside Wishes",
+    "alt": "Four blue cakesicles decorated with sandy crumbs, a turtle, starfish, shells and a mermaid tail.",
+    "filter": "seaside"
+  },
+  {
+    "id": 9,
+    "filename": "20260529_094919.jpg",
+    "name": "Birthday Pastel Party",
+    "alt": "A gift box of pastel cakesicles decorated with birthday lettering, numbers, drizzle and sprinkles.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 10,
+    "filename": "20260719_131739.jpg",
+    "name": "Little Diggers",
+    "alt": "Two pale blue cakesicles with yellow construction vehicles, orange cones and dark crumb decorations held outdoors.",
+    "filter": "characters"
+  },
+  {
+    "id": 11,
+    "filename": "20260702_150549.jpg",
+    "name": "Fifteen Golden Moments",
+    "alt": "Six cream cakesicles decorated with a gold number 15, gold lettering, blue and gold drizzle, and speckles.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 12,
+    "filename": "20260619_144013.jpg",
+    "name": "Midnight Rose",
+    "alt": "A bright pink cakesicle decorated with two black roses, black drizzle and small gold pearls.",
+    "filter": "nature"
+  },
+  {
+    "id": 13,
+    "filename": "20260412_092042.jpg",
+    "name": "Love at First Bite",
+    "alt": "A bitten white cake pop with red heart decorations revealing its dark cake centre.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 14,
+    "filename": "20260610_120528.jpg",
+    "name": "Bat Signal Bites",
+    "alt": "Black cakesicles topped with yellow and black Batman emblems arranged in two rows on a white tray.",
+    "filter": "characters"
+  },
+  {
+    "id": 15,
+    "filename": "20260503_144158.jpg",
+    "name": "Rainbow Ribbons",
+    "alt": "Cakesicles with yellow, green, pink and white marbled stripes arranged on a white rectangular plate.",
+    "filter": "marbled"
+  },
+  {
+    "id": 16,
+    "filename": "20260507_152828.jpg",
+    "name": "Brick by Birthday",
+    "alt": "Red and yellow cakesicles decorated with colourful toy-brick shapes, sprinkles and number 13 toppers.",
+    "filter": "characters"
+  },
+  {
+    "id": 17,
+    "filename": "20260712_150450.jpg",
+    "name": "Twilight Hearts",
+    "alt": "Blue, purple and pink marbled heart-shaped cake pops arranged in rows on a textured white surface.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 18,
+    "filename": "20260426_080214.jpg",
+    "name": "Coastal Swirls",
+    "alt": "Three blue, white and orange striped cakesicles held together against a textured white background.",
+    "filter": "marbled"
+  },
+  {
+    "id": 19,
+    "filename": "20260613_090724.jpg",
+    "name": "Emerald Ripples",
+    "alt": "Seven green and white marbled cakesicles arranged in a staggered column on grey fabric.",
+    "filter": "marbled"
+  },
+  {
+    "id": 20,
+    "filename": "20260712_131021.jpg",
+    "name": "Bluey Takes the Spotlight",
+    "alt": "A blue cakesicle with a round Bluey picture topper held in front of a matching blue and white set.",
+    "filter": "characters"
+  },
+  {
+    "id": 21,
+    "filename": "20260513_125010.jpeg",
+    "name": "Berry Swirl Parade",
+    "alt": "Pink, red and white marbled cakesicles arranged diagonally on grey fabric with scattered small decorations.",
+    "filter": "marbled"
+  },
+  {
+    "id": 22,
+    "filename": "20260625_101442.jpg",
+    "name": "Biscuit Bliss",
+    "alt": "White cakesicles topped with rectangular biscuits and biscuit crumbs displayed upright on a white stand.",
+    "filter": "classic"
+  },
+  {
+    "id": 23,
+    "filename": "20260416_080852.jpg",
+    "name": "Hearts and Petals",
+    "alt": "Three pink, red and white cake pops with marbling, drizzle, red hearts and small flowers on a grey plate.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 24,
+    "filename": "20260619_143907.jpg",
+    "name": "Roses After Dark",
+    "alt": "Pink and white cakesicles decorated with black roses, black butterflies, drizzle and small pearls inside a box.",
+    "filter": "nature"
+  },
+  {
+    "id": 25,
+    "filename": "bitten-cakesicle.jpg",
+    "name": "A Bite of Elegance",
+    "alt": "A bitten white cakesicle with a quilted pattern revealing its dark cake centre, with pink and white floral cakesicles behind it.",
+    "filter": "nature"
+  },
+  {
+    "id": 26,
+    "filename": "20260702_150311.jpg",
+    "name": "Pony Party",
+    "alt": "A row of pink and mint cakesicles with brown horse-themed decorations, lettering and a number 10 topper.",
+    "filter": "animals"
+  },
+  {
+    "id": 27,
+    "filename": "20260718_145716.jpg",
+    "name": "Whisker Wishes",
+    "alt": "Seven cream and grey cat-shaped cakesicles decorated with ears, eyes, whiskers and paw prints.",
+    "filter": "animals"
+  },
+  {
+    "id": 28,
+    "filename": "20260603_082014.jpg",
+    "name": "Autumn Marble Medley",
+    "alt": "Orange, purple, blue and white marbled cakesicles arranged in a circle on a marble-patterned plate.",
+    "filter": "marbled"
+  },
+  {
+    "id": 29,
+    "filename": "671789214_18084627809100344_7842449110131871885_n.webp",
+    "name": "Chocolate Confetti",
+    "alt": "Brown and white cakesicles decorated with colourful sprinkles, contrasting drizzle and golden crumbs.",
+    "filter": "classic"
+  },
+  {
+    "id": 30,
+    "filename": "20260716_182044.jpg",
+    "name": "Over the Birthday Rainbow",
+    "alt": "Colourful heart-shaped cake pops decorated with rainbow toppers and number 3 decorations.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 31,
+    "filename": "20260506_142542.jpg",
+    "name": "Sunshine Birthday Swirls",
+    "alt": "A tray of yellow, orange and green marbled cakesicles with number 5 toppers and colourful decorations.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 32,
+    "filename": "20260719_134211.jpg",
+    "name": "Snip Snip Hooray",
+    "alt": "Two grey cakesicles with white drizzle and orange hairdressing-themed decorations, surrounded by small hearts and letters.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 33,
+    "filename": "20260724_125224.jpg",
+    "name": "Mermaid Birthday Wishes",
+    "alt": "Pink and blue cakesicles with mermaid tails, starfish, shells, sandy crumbs and birthday number decorations.",
+    "filter": "seaside"
+  },
+  {
+    "id": 34,
+    "filename": "20260702_150323.jpg",
+    "name": "Mint Meadow Pony",
+    "alt": "A mint-green cakesicle with pale drizzle and a brown horse decoration held against a grey background.",
+    "filter": "animals"
+  },
+  {
+    "id": 35,
+    "filename": "20260425_094313.jpg",
+    "name": "Blue Lagoon Swirls",
+    "alt": "A tray of blue and white cakesicles with marbled stripes, blue sprinkles and small decorative toppers.",
+    "filter": "marbled"
+  },
+  {
+    "id": 36,
+    "filename": "20260712_130849.jpg",
+    "name": "Bluey Birthday Crew",
+    "alt": "Blue and white cakesicles decorated with Bluey and Bingo picture toppers, number 1 decorations and white name lettering.",
+    "filter": "characters"
+  },
+  {
+    "id": 37,
+    "filename": "20260508_124636.jpg",
+    "name": "Golden Green Swirls",
+    "alt": "Green, white and orange marbled cakesicles with gold accents arranged around a marble-patterned plate.",
+    "filter": "marbled"
+  },
+  {
+    "id": 38,
+    "filename": "20260712_142428.jpg",
+    "name": "Rainbow Heart Parade",
+    "alt": "Pastel heart-shaped cake pops decorated with drizzle, small flowers and colourful rainbow toppers.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 39,
+    "filename": "20260620_124022.jpg",
+    "name": "Love and Golden Rings",
+    "alt": "An upright display of brown, red and white treats decorated with gold rings, red roses, hearts and drizzle.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 40,
+    "filename": "20260423_084732.jpg",
+    "name": "The Sweetest Selection",
+    "alt": "A large spread of cakesicles with colourful marbling, chocolate coatings, sprinkles and contrasting drizzle.",
+    "filter": "classic"
+  },
+  {
+    "id": 41,
+    "filename": "20260609_161135.jpg",
+    "name": "Hulk Smash Sweets",
+    "alt": "Green marbled cakesicles topped with raised green fists arranged in rows.",
+    "filter": "characters"
+  },
+  {
+    "id": 42,
+    "filename": "20260722_081206.jpg",
+    "name": "Citrus Sunshine",
+    "alt": "Four yellow and white cakesicles on a grey plate, including lemon-slice decorations and small white flowers.",
+    "filter": "nature"
+  },
+  {
+    "id": 43,
+    "filename": "20260606_135921.jpg",
+    "name": "Honeybee Happiness",
+    "alt": "Three yellow cakesicles decorated with a bee and dotted trail, honeycomb shapes and a honey pot design.",
+    "filter": "animals"
+  },
+  {
+    "id": 44,
+    "filename": "20260510_154801.jpg",
+    "name": "Petal Pops",
+    "alt": "Three purple, pink and blue marbled cake pops topped with small red and yellow flowers.",
+    "filter": "nature"
+  },
+  {
+    "id": 45,
+    "filename": "20260618_092136.jpg",
+    "name": "Pocketful of Posies",
+    "alt": "Six green and white cakesicles decorated with clusters of colourful flowers and pale drizzle.",
+    "filter": "nature"
+  },
+  {
+    "id": 46,
+    "filename": "1000052634.jpg",
+    "name": "Blushing Rose Collection",
+    "alt": "A close-up of pink and white cakesicles decorated with sculpted roses, drizzle and quilted patterns.",
+    "filter": "nature"
+  },
+  {
+    "id": 47,
+    "filename": "20260621_093121.jpg",
+    "name": "Market Day Treats",
+    "alt": "Individually wrapped treats displayed upright beside chalkboard labels reading Vanilla and Chocolate.",
+    "filter": "classic"
+  },
+  {
+    "id": 48,
+    "filename": "673685295_122101566722735395_7152540514782818340_n-1.jpg",
+    "name": "A Platter of Possibilities",
+    "alt": "A white rectangular tray of white, chocolate and marbled cakesicles with colourful sprinkles and drizzle.",
+    "filter": "classic"
+  },
+  {
+    "id": 49,
+    "filename": "20260416_080353.jpg",
+    "name": "Chocolate Flower Trio",
+    "alt": "Three chocolate-coloured round cake pops topped with blue, red and yellow flowers against blue fabric.",
+    "filter": "nature"
+  },
+  {
+    "id": 50,
+    "filename": "20260618_115819.jpg",
+    "name": "Garden Party Swirls",
+    "alt": "Green, white and multicoloured marbled cakesicles with colourful flower decorations arranged around a plate.",
+    "filter": "nature"
+  },
+  {
+    "id": 51,
+    "filename": "20260707_132712.jpg",
+    "name": "Midnight Gold",
+    "alt": "Dark blue, white and grey marbled cakesicles with gold flecks arranged in a circle on a marble-patterned plate.",
+    "filter": "marbled"
+  },
+  {
+    "id": 52,
+    "filename": "20260710_110829.jpg",
+    "name": "Twenty-One Sweet Wishes",
+    "alt": "Two blue heart-shaped cake pops with pale drizzle, one topped with pink lettering and the other with a yellow number 21.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 53,
+    "filename": "20260710_124554.jpg",
+    "name": "Sunset Ribbons",
+    "alt": "Red, orange, yellow and white marbled cakesicles arranged in a circle on a marble-patterned plate.",
+    "filter": "marbled"
+  },
+  {
+    "id": 54,
+    "filename": "20260426_075345.jpg",
+    "name": "Two Hearts, One Treat",
+    "alt": "A white round treat with two red hearts beside a pink and white heart-shaped treat with a pink bow, held against a red background.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 55,
+    "filename": "20260609_160049.jpg",
+    "name": "Captain Celebration",
+    "alt": "White cakesicles covered in multicoloured sprinkles and topped with red, white and blue Captain America shields.",
+    "filter": "characters"
+  },
+  {
+    "id": 56,
+    "filename": "20260712_142510.jpg",
+    "name": "Little Rainbow Dream",
+    "alt": "A purple heart-shaped cake pop with lavender drizzle and a rainbow topper held in front of other pastel pops.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 57,
+    "filename": "20260712_150538.jpg",
+    "name": "Twilight Heart",
+    "alt": "A single heart-shaped cake pop with vertical pink, purple and blue marbled stripes.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 58,
+    "filename": "20260603_080325.jpg",
+    "name": "Confetti in the Sunshine",
+    "alt": "Two round cake pops completely covered in rainbow sprinkles held outdoors against green trees and blue sky.",
+    "filter": "classic"
+  },
+  {
+    "id": 59,
+    "filename": "20260628_135945.jpg",
+    "name": "Chocolate Shell Serenade",
+    "alt": "Brown and white cakesicles decorated with chocolate shell shapes and contrasting drizzle arranged on a green plate.",
+    "filter": "seaside"
+  }
+]
