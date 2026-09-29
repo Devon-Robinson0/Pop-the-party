@@ -1,0 +1,100 @@
+.display-container .img-holder {
+    border-radius: 170px 170px 10px 10px;
+    height: 450px;
+}
+.display-container .img-holder img {
+    object-position: center 20%;
+}
+.display-container p {
+    font-size: 12px;
+}
+
+#pretty-treat {
+    margin: 0;
+    padding: 20px;
+
+    background-color: var(--pink-bg);
+}
+#pretty-treat .content a {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+
+    border-bottom: 1px solid var(--primary);
+    width: fit-content;
+
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+#pretty-treat .content h2 {
+    margin: 0;
+}
+#pretty-treat .content a svg {
+    stroke-width: 40;
+    stroke: var(--primary);
+    margin-left: 10px;
+}
+#pretty-treat .img-holder {
+    width: 150px;
+    border-radius: 5px;
+}
+#pretty-treat .img-holder img {
+    object-fit: cover;
+}
+#pretty-treat .img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+}
+#pretty-treat .img-container .img-holder:first-child {
+    margin-bottom: 20px;
+}
+#pretty-treat .img-container .img-holder:last-child {
+    margin-top: 20px;
+}
+
+#steps-section {
+    margin-top: 40px;
+}
+#steps-section .eyebrow {
+    margin: 0;
+    margin-top: 40px;
+}
+#steps-section h3 {
+    margin: 20px 0;
+}
+#steps-section hr {
+    background-color: var(--border);
+    border: none;
+
+    width: 100%;
+    height: 1px;
+}
+#steps-section .purple-title {
+    color: var(--text-muted);
+    font-weight: 400;
+    font-size: 16px;
+}
+#steps-section .title {
+    font-family: "poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+
+    margin: 10px 0;
+}
+#steps-section #steps-container div:last-child {
+    margin-bottom: 40px;
+}
+
+#celebration-mind {
+    padding: 30px 20px;
+    background-color: var(--pink-bg);
+
+    border-radius: 10px;
+}
+#celebration-mind h2 {
+    margin: 0;
+}
+#celebration-mind p {
+    margin-bottom: 30px;
+}
