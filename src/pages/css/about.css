@@ -26,6 +26,9 @@
     padding: 10px 0;
     margin-bottom: 40px;
 }
+#pretty-treat .content a:hover {
+    color: var(--heading-accent);
+}
 #pretty-treat .content h2 {
     margin: 0;
 }
@@ -34,8 +37,10 @@
     stroke: var(--primary);
     margin-left: 10px;
 }
+#pretty-treat .content a:hover svg {
+    stroke: var(--heading-accent);
+}
 #pretty-treat .img-holder {
-    width: 150px;
     border-radius: 5px;
 }
 #pretty-treat .img-holder img {
@@ -45,6 +50,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 300px;
+    gap: 20px;
 }
 #pretty-treat .img-container .img-holder:first-child {
     margin-bottom: 20px;
@@ -97,4 +103,104 @@
 }
 #celebration-mind p {
     margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    #about-eve-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        column-gap: 80px;
+
+        margin-bottom: 80px;
+    }
+    #about-eve-section > *:first-child {
+        order: 2;
+    }
+    #about-eve-section > *:last-child {
+        order: 1;
+    }
+
+    .display-container {
+        margin: auto 0;
+    }
+    .display-container .img-holder {
+        border-radius: 200px 200px 10px 10px;
+        height: 80vh;
+    }
+    .display-container p {
+        text-align: center;
+    }
+
+    .header-holder {
+        align-items: flex-start;
+        padding: 0;
+    }
+    .header-holder h1,
+    .header-holder p {
+        text-align: start;
+    }
+    .header-holder .em-text {
+        font-size: 18px;
+    }
+
+    #pretty-treat {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 70px 150px 40px 150px;
+
+        column-gap: 80px;
+    }
+    #pretty-treat .content h2 {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+    }
+    #pretty-treat .img-container {
+        display: flex;
+        gap: 20px;
+        height: 350px;
+    }
+    #pretty-treat .img-container .img-holder {
+        width: 100%;
+        height: calc(100% - 40px);
+    }
+    #pretty-treat .img-container .img-holder:first-child {
+        margin-bottom: 40px;
+    }
+    #pretty-treat .img-container .img-holder:last-child {
+        margin-top: 40px;
+    }
+
+    #steps-section {
+        margin-bottom: 40px;
+        margin-top: 50px;
+    }
+    #steps-section #steps-container {
+        display: flex;
+        flex-direction: row;
+    }
+    #steps-section #steps-container h3 {
+        line-height: 1.5rem;
+    }
+    #steps-section hr {
+        display: none;
+    }
+
+    #celebration-mind {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 40px;
+    }
+    #celebration-mind h2 {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+    }
+    #celebration-mind a {
+        height: fit-content;
+    }
+    #celebration-mind p {
+        margin-bottom: 0;
+    }
 }

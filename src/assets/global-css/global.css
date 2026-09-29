@@ -51,6 +51,7 @@ p.subtle-text {
 
 main {
     margin-top: 30px;
+    margin-bottom: 40px;
 }
 
 section {
@@ -157,6 +158,11 @@ p#breadcrumb {
 }
 
 @media (min-width: 768px) {
+
+    main {
+        margin-bottom: 80px;
+    }
+
     h1, h2, h3 {
         line-height: 4.5rem;
         font-size: 3.8rem;

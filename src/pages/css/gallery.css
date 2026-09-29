@@ -16,6 +16,10 @@ input[name="filter"]:checked + label {
     display: flex;
     flex-direction: column;
 
+    margin: 20px 0;
+}
+#gallery-section hr {
+    margin-bottom: 20px;
 }
 .filters-container {
     display: flex;
@@ -164,4 +168,50 @@ hr {
 }
 #spotted-something p {
     margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    #filter-and-text-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    #gallery-section hr {
+        margin-bottom: 30px;
+    }
+
+    #gallery {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 30px;
+
+        margin-bottom: 80px;
+    }
+    #gallery li h2 {
+        font-size: 16px;
+        font-weight: 500;
+        margin: 10px 0;
+
+        line-height: 1.2rem;
+    }
+
+    #spotted-something {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 40px;
+    }
+    #spotted-something h2 {
+        font-size: 2.8rem;
+        line-height: 2.8rem;
+    }
+    #spotted-something a {
+        height: fit-content;
+    }
+    #spotted-something p {
+        margin-bottom: 0;
+    }
 }
