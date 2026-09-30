@@ -86,7 +86,7 @@ button:focus {
     font-size: 12px;
 }
 
-a.explore-link:hover {
+.explore-link:hover {
     color: var(--heading-accent);
     cursor: pointer;
 }
@@ -131,8 +131,11 @@ p#breadcrumb {
 .explore-link {
     display: flex;
     align-items: center;
+
+    border: none;
     border-bottom: 1px solid var(--primary);
     padding-bottom: 8px;
+    background-color: inherit;
 
     width: fit-content;
     font-weight: 600;

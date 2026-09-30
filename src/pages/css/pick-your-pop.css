@@ -42,7 +42,7 @@
     padding-top: 0;
 }
 
-.primary-link {
+.pop-type .primary-link {
     width: calc(100% - 40px);
 }
 
@@ -156,8 +156,7 @@
     font-weight: 600;
     font-size: 18px;
 
-    margin: 5px 0 10px 0;
-    margin-top: 5px;
+    margin: 10px 0 10px 0;
 }
 
 input[name="cake-type"] {
@@ -171,7 +170,7 @@ input[name="cake-type"]:checked + label {
 .label-btn {
     border: 1px solid var(--border);
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
 
     background-color: var(--surface);
     color: var(--text-muted);
@@ -184,7 +183,8 @@ input[name="cake-type"]:checked + label {
 }
 
 .input-container {
-    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 #cake-flavour {
@@ -201,6 +201,7 @@ input[name="cake-type"]:checked + label {
 #coating {
     display: flex;
     flex-direction: column;
+    gap: 5px;
 }
 
 input[name="coating"] {
@@ -244,6 +245,7 @@ input[name="coating"]:checked::after {
 #extra-info {
     width: calc(100% - 20px);
     height: 50px;
+    font-family: "poppins", sans-serif;
 
     padding: 10px;
     font-size: 14px;
@@ -292,6 +294,23 @@ input[name="coating"]:checked::after {
 
 #enquire-my-pop {
     margin-top: 20px;
+}
+
+#your-celebration {
+    margin-top: 80px;
+    padding: 30px 20px;
+    background-color: var(--pink-bg);
+
+    border-radius: 10px;
+}
+#your-celebration .primary-link {
+    text-wrap: nowrap;
+}
+#your-celebration h2 {
+    margin: 0;
+}
+#your-celebration p {
+    margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
@@ -395,4 +414,21 @@ input[name="coating"]:checked::after {
     #enquire-my-pop {
         width: 350px;
     }  
+
+    #your-celebration {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 40px;
+    }
+    #your-celebration h2 {
+        font-size: 2.8rem;
+    }
+    #your-celebration a {
+        height: fit-content;
+    }
+    #your-celebration p {
+        margin-bottom: 0;
+    }
 }
