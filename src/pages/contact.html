@@ -36,7 +36,9 @@
               type="text"
               placeholder="First and last name"
               name="name"
+              required
             />
+            <p class="error-msg" hidden>Please enter your name</p>
           </div>
           <div class="input-container">
             <label for="email">Email address <span class="required">*</span></label>
@@ -45,7 +47,9 @@
               type="email"
               placeholder="you@example.com"
               name="email"
+              required
             />
+            <p class="error-msg" hidden>Please enter a valid email address</p>
           </div>
           <div class="input-container">
             <label for="date">Celebration date <span class="optional">(optional)</span></label>
@@ -54,6 +58,7 @@
               type="date"
               name="date"
             />
+            <p class="error-msg" hidden>Date must be in the future, or cleared</p>
           </div>
           <div class="input-container">
             <label for="quantity">Number of treats <span class="optional">(optional)</span></label>
@@ -63,6 +68,7 @@
               inputmode="numeric"
               placeholder="Minimum 6"
               name="quantity"
+              min="6"
             />
           </div>
           <div class="input-container">
@@ -92,13 +98,14 @@
             </select>
           </div>
           <div class="input-container">
-            <label for="inspiration">Gallery inspiration <span class="optional">(optional)</span></label>
+            <label for="inspiration">Gallery inspiration <span class="optional">(optional)</span> <span id="from-gallery-badge"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg> Added from gallery</span></label>
             <input 
               id="inspiration"
               type="text"
               placeholder="Name of a design you love"
               name="inspiration"
             />
+            <p id="from-gallery-text" class="muted-text small" hidden>Filled in from your gallery selection. you can change or remove it</p>
           </div>
           <div class="input-container">
             <label for="extra">Tell us your idea <span class="required">*</span></label>
@@ -106,6 +113,7 @@
               id="extra"
               placeholder="Your occasion, colours, chocolate coating and any special details..."
               name="extra"
+              required
             ></textarea>
           </div>
           <div class="input-container">
@@ -120,7 +128,7 @@
           
           <hr />
 
-          <button id="prepare-btn" class="primary-link dark" type="button">Prepare my enquiry <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
+          <button id="prepare-btn" class="primary-link dark" type="submit">Prepare my enquiry <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
           <p class="muted-text small info">We’ll prepare an email for you to review and send to Eve. Your details stay in this page until you choose to send them through your email app.</p>
         </form>
       </section>
@@ -153,5 +161,6 @@
     </main>
 
     <script src="../assets/components/js/header.js"></script>
+    <script src="./js/contact.js"></script>
   </body>
 </html>

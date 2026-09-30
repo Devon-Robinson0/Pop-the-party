@@ -5,6 +5,9 @@ const galleryModal = document.getElementById("gallery-modal");
 const closeBtn = document.getElementById("close-modal");
 const galleryTitle = document.getElementById("modal-title");
 const galleryImgHolder = document.getElementById("modal-img-holder");
+const enquireDesignBtn = document.getElementById("enquire-design");
+
+let match;
 
 function addFilterListeners() {
     const filters = document.querySelectorAll('input[name="filter"]');
@@ -53,7 +56,7 @@ async function loadGallery() {
 
     galleryItems.forEach(item => {
         item.addEventListener("click", () => {
-            const match = gallery.find(m => m.id === Number(item.id));
+            match = gallery.find(m => m.id === Number(item.id));
 
             galleryTitle.textContent = match.name;
             galleryImgHolder.innerHTML = `
@@ -66,7 +69,15 @@ async function loadGallery() {
 }
 
 closeBtn.addEventListener("click", () => {
+    match = null;
     galleryModal.close();
+});
+
+enquireDesignBtn.addEventListener("click", () => {
+    localStorage.setItem("inspiration", JSON.stringify(match));
+    localStorage.setItem("from-gallery-item", true);
+
+    window.location.href = "./contact.html";
 });
 
 addFilterListeners();

@@ -11,6 +11,12 @@ input[name="filter"]:checked + label {
     border-color: var(--primary);
     color: var(--surface);
 }
+input[name="filter"]:not(:checked) + label:hover {
+    background-color: var(--pink-bg);
+
+    transition: background-color .4s ease,
+        border-color .4s ease;
+}
 
 #filter-and-text-container {
     display: flex;
@@ -87,13 +93,15 @@ hr {
 }
 
 #gallery-modal {
+    display: flex;
+    flex-direction: column;
     position: fixed;
 
     margin: auto;
     box-sizing: border-box;
 
     max-width: calc(100% - 40px);
-    max-height: 80vh;
+    height: 80vh;
 
     background-color: var(--background);
     border: none;
@@ -108,8 +116,10 @@ hr {
 #gallery-modal .top-nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    padding: 10px;
+    padding: 0 20px;
+    height: 100px;
 }
 #gallery-modal #close-modal {
     display: flex;
@@ -129,7 +139,7 @@ hr {
 }
 #gallery-modal .img-holder {
     width: 100%;
-    height: 40vh;
+    height: 100%;
     background-color: #dfdfdf;
 }
 #gallery-modal .img-holder img {
@@ -138,12 +148,14 @@ hr {
     object-fit: contain;
     display: block;
 }
-#gallery-modal h2 {
+#gallery-modal #modal-title {
     font-family: "poppins", sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
+    margin: 20px 0;
 }
 #gallery-modal .content {
+    height: 200px;
     padding: 0 20px 10px 20px;
 }
 #gallery-modal .content h2 {
@@ -214,4 +226,10 @@ hr {
     #spotted-something p {
         margin-bottom: 0;
     }
+
+    #gallery-modal {
+        width: 65vw;
+        height: 85vh;
+    }
+
 }

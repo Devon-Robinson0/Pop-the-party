@@ -61,6 +61,11 @@ textarea {
 
     background-color: var(--background);
 }
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+    border-color: red;
+}
 textarea {
     resize: none;
     height: 100px;
@@ -71,6 +76,7 @@ label {
 input[type="date"] {
     padding-block: 8px;
 }
+
 
 #note {
     margin-top: 40px;
@@ -108,10 +114,40 @@ input[type="date"] {
 
 }
 
+#from-gallery-badge {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 12px;
+
+    padding: 2px 5px;
+    background-color: var(--pink-bg);
+    color: var(--heading-accent);
+    border-radius: 30px;
+}
+#from-gallery-badge svg {
+    fill: var(--heading-accent);
+    stroke: var(--heading-accent);
+    stroke-width: 10;
+
+    width: 18px;
+    height: 18px;
+}
+
+#from-gallery-text {
+    margin: 0;
+}
+
+.error-msg {
+    color: red;
+    margin: 0;
+}
+
 @media (min-width: 768px) {
     main {
         display: grid;
-        grid-template-columns: .9fr 1.1fr;
+        grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
         column-gap: 40px;
     }
     main section:first-child {
@@ -142,7 +178,7 @@ input[type="date"] {
 
     form {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     form div:first-child {
         grid-column: span 2;
