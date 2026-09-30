@@ -333,7 +333,7 @@ input[name="coating"]:checked::after {
 
     .numbered-list h3 {
         margin: 0;
-        line-height: 2rem;
+        /* line-height: 2rem; */
     }
 
     .display-container {
@@ -365,7 +365,7 @@ input[name="coating"]:checked::after {
     }
     #steps-container h3 {
         margin: 0;
-        line-height: 2rem;
+        /* line-height: 2rem; */
     }
     #steps-container > div {
         display: flex;

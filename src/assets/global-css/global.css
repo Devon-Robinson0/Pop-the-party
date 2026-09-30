@@ -7,6 +7,7 @@ body {
     background-color: var(--background);
     font-size: 1rem;
     color: var(--primary);
+    line-height: 1;
 }
 
 a {
@@ -17,7 +18,7 @@ a {
 h1, h2, h3 {
     font-family: "Shrikhand", serif;
     font-weight: 400;
-    line-height: 2.2rem;
+    line-height: 1.15;
     font-size: 2.2rem;
 
     color: var(--primary);
@@ -27,7 +28,8 @@ a,
 input[type="radio"], 
 input[type="checkbox"], 
 label,
-select {
+select,
+button {
     cursor: pointer;
 }
 
@@ -43,6 +45,7 @@ h2.pink {
 
 p {
     font-size: 14px;
+    line-height: 1.5;
 }
 
 p.subtle-text {
@@ -67,8 +70,19 @@ p, span, a, label {
     font-size: 14px;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--heading-accent);
+    outline-offset: 3px;
+}
+
 .muted-text {
     color: var(--text-muted);
+}
+
+.small {
+    font-size: 12px;
 }
 
 a.explore-link:hover {
@@ -136,10 +150,12 @@ p#breadcrumb {
     border-radius: 5px;
     background-color: inherit;
     color: var(--primary);
-    font-weight: 500;
+    font-weight: 600;
 }
 .primary-link svg {
     margin-left: 10px;
+    stroke-width: 40;
+    stroke: var(--primary);
 }
 .primary-link:hover {
     background-color: var(--primary);
@@ -155,6 +171,15 @@ p#breadcrumb {
 }
 .primary-link.dark svg {
     fill: var(--surface);
+    stroke: var(--surface);
+}
+.primary-link.dark:hover {
+    background-color: var(--navy-btn-bg-hover);
+}
+
+::selection {
+    background-color: #f5b8cf;
+    color: #000;
 }
 
 @media (min-width: 768px) {
@@ -164,7 +189,7 @@ p#breadcrumb {
     }
 
     h1, h2, h3 {
-        line-height: 4.5rem;
+        /* line-height: 4.5rem; */
         font-size: 3.8rem;
     }
     h1 span {
