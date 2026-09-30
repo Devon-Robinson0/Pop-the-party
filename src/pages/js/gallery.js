@@ -74,8 +74,8 @@ closeBtn.addEventListener("click", () => {
 });
 
 enquireDesignBtn.addEventListener("click", () => {
-    localStorage.setItem("inspiration", JSON.stringify(match));
-    localStorage.setItem("from-gallery-item", true);
+    sessionStorage.setItem("inspiration", JSON.stringify(match));
+    sessionStorage.setItem("from-gallery-item", true);
 
     window.location.href = "./contact.html";
 });

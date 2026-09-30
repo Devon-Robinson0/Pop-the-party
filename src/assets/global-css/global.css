@@ -164,6 +164,7 @@ p#breadcrumb {
 }
 .primary-link:hover svg {
     fill: var(--surface);
+    stroke: var(--surface);
 }
 .primary-link.dark {
     color: var(--surface);

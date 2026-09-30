@@ -51,7 +51,7 @@
                                 <p>from <span class="pop-price">$4</span> each</p>
                             </div>
                             <p>Bite-sized cake, a chocolate coating and plenty of personality.</p>
-                            <a class="primary-link white">Enquire cake pops <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
+                            <button id="enquire-cakepops" class="primary-link white">Enquire cake pops <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
                         </div>
                     </article>
 
@@ -66,7 +66,7 @@
                                 <p>from <span class="pop-price">$6</span> each</p>
                             </div>
                             <p>Chocolate-coated cakesicles with drizzle, sprinkles or a marble finish</p>
-                            <a class="primary-link white">Enquire cakesicles <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
+                            <button id="enquire-classic-cakesicles" class="primary-link white">Enquire cakesicles <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
                         </div>
                     </article>
 
@@ -81,7 +81,7 @@
                                <p>from <span class="pop-price">$8</span> each</p>
                             </div>
                             <p>Your colours, your theme and all the little details that make it yours.</p>
-                            <a class="primary-link">Enquire custom cakesicles <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
+                            <button id="enquire-custom-cakesicles" class="primary-link">Enquire custom cakesicles <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
                         </div>
                     </article>
                 </div>
@@ -102,10 +102,10 @@
                             <h3>Choose your cake type</h3>
 
                             <div class="input-container">
-                                <input type="radio" id="cake-pop-type" name="cake-type" value="cake-pop" checked />
+                                <input type="radio" id="cake-pop-type" name="cake-type" value="cakepop" checked />
                                 <label for="cake-pop-type" class="label-btn">Cake pop</label>
 
-                                <input type="radio" id="cakesicle-type" name="cake-type" value="cakesicle" />
+                                <input type="radio" id="cakesicle-type" name="cake-type" value="classic-cakesicle" />
                                 <label for="cakesicle-type" class="label-btn">Cakesicle</label>
                             </div>
                         </li>
@@ -155,6 +155,8 @@
 
                             <textarea id="extra-info" 
                                 placeholder="Choose some colours, share your theme, and tell us about the details you have in mind"></textarea>
+
+                            <button id="enquire-my-pop" class="primary-link dark" type="button">Enquire about my pop <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
                         </li>
                     </ol>
                     <p class="muted-text">Have an allergy or dietary requirement? Please discuss it with Eve before ordering so she can advise on ingredients and preparation.</p>
@@ -205,5 +207,6 @@
 
         <script src="../assets/components/js/header.js"></script>
         <script src="../assets/components/js/footer.js"></script>
+        <script src="./js/pick-your-pop.js"></script>
     </body>
 </html>
