@@ -1,0 +1,32 @@
+<footer>
+	<article class="footer-top">
+		<div class="img-holder">
+			<img src="../assets/icons/pop-the-party-nobg-icon.png" />
+		</div>
+		<div class="content">
+			<p>Handmade with love, <br>
+				handcrafted for your party.</p>
+		</div>
+	</article>
+	<article class="social">
+		<h3>Follow the sweet stuff</h3>
+		<a href="https://www.instagram.com/poptheparty_nz/"><img src="../assets/icons/instagram-icon.svg" />Instagram <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
+		<a href="https://www.facebook.com/people/Pop-The-Party/61572061856951/"><img src="../assets/icons/facebook-icon.svg" />Facebook <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
+	</article>
+	<article class="anchors">
+		<h3>A little something sweet?</h3>
+		<p>Made in Nelson, New Zealand.</p>
+		<p>Lets talk about your celebration.</p>
+
+		<a href="mailto:orders@poptheparty.nz">orders@poptheparty.nz<svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
+	</article>
+
+	<article class="last">
+		<hr />
+
+		<div class="content">
+			<p>&copy; 2026 Pop the party</p>
+			<a id="back-to-top" href="#">Back to top<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"/></svg></a>
+		</div>
+	</article>
+</footer>

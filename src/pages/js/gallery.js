@@ -39,11 +39,13 @@ async function loadGallery() {
 
         galleryList.insertAdjacentHTML("beforeend", `
             <li id="${item.id}" class="${item.filter}">
-                <div class="img-holder">
-                    <img src="../assets/gallery-imgs/${item.filename}" alt="${item.alt}" />
-                </div>
-                <h2>${item.name}</h2>
-                <p class="muted-text">${item.filter}</p>
+                <button class="tab-btn">
+                    <div class="img-holder">
+                        <img src="../assets/gallery-imgs/${item.filename}" alt="${item.alt}" />
+                    </div>
+                    <h2>${item.name}</h2>
+                    <p class="muted-text">${item.filter}</p>
+                </button>
             </li>
             `);
         

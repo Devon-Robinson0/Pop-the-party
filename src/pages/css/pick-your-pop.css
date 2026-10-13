@@ -160,7 +160,17 @@
 }
 
 input[name="cake-type"] {
-    display: none;
+    /* hides it without removing from focus */
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+}
+input[name="cake-type"]:focus-visible + label {
+    outline: 2px solid var(--heading-accent);
+    outline-offset: 3px;
 }
 input[name="cake-type"]:checked + label {
     background-color: var(--primary);

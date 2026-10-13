@@ -1,5 +1,10 @@
 input[name="filter"] {
-    display: none;
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
 }
 input[name="filter"] + label {
     padding: 10px 20px;
@@ -16,6 +21,10 @@ input[name="filter"]:not(:checked) + label:hover {
 
     transition: background-color .4s ease,
         border-color .4s ease;
+}
+input[name="filter"]:focus-visible + label {
+    outline: 2px solid var(--heading-accent);
+    outline-offset: 3px;
 }
 
 #filter-and-text-container {
@@ -48,6 +57,12 @@ hr {
 
     list-style: none;
     padding: 0;
+}
+#gallery li .tab-btn {
+    background-color: inherit;
+    border: none;
+    text-align: left;
+    border-radius: 5px;
 }
 #gallery .img-holder {
     position: relative;
