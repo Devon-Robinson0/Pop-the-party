@@ -107,8 +107,14 @@ hr {
     /* line-height: 1rem; */
 }
 
-#gallery-modal {
+#gallery-modal[open] {
     display: flex;
+}
+#gallery-modal:not([open]) {
+    display: none;
+}
+
+#gallery-modal {
     flex-direction: column;
     position: fixed;
 

@@ -43,6 +43,8 @@ submitBtn.addEventListener("click", () => {
         const today = new Date();
         const formatted = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
 
+        date.setCustomValidity("");
+
         if (date.value < formatted) {
             date.setCustomValidity("Date must be in the future or empty");
         }
@@ -56,11 +58,17 @@ submitBtn.addEventListener("click", () => {
         msg.hidden = true;
     });
 
+    form.querySelectorAll("[aria-invalid]").forEach(field => {
+        field.removeAttribute("aria-invalid");
+    });
+
     const invalidFields = form.querySelectorAll(
             "input:invalid, textarea:invalid"
         );
     
     invalidFields.forEach(field => {
+        field.setAttribute("aria-invalid", true);
+
         const errorMsg = [...field.parentElement.children].find(
             child => child !== field && child.classList.contains("error-msg")
         );
@@ -68,6 +76,8 @@ submitBtn.addEventListener("click", () => {
             errorMsg.hidden = false;
         }
     });
+
+    invalidFields[0]?.focus();
 });
 
 const fromGalleryItem = sessionStorage.getItem("from-gallery-item") ?? false;;

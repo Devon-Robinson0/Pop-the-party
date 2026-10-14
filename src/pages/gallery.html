@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop the Party Gallery</title>
+    <title>Gallery | Pop the Party</title>
     <link rel="stylesheet" href="/assets/global-css/global.css" />
     <link rel="stylesheet" href="/pages/css/gallery.css" />
 </head>
@@ -12,7 +12,7 @@
 
     <main>
         <section>
-            <p id="breadcrumb"><a href="/index.html">Home</a> / Gallery</p>
+            <p id="breadcrumb" aria-label="breadcrumb"><a href="/index.html">Home</a> / Gallery</p>
             <div class="header-holder">
                 <p class="eyebrow">THE SWEETEST KIND OF INSPIRATION</p>
                 <h1>A little colour.<br />
@@ -24,7 +24,9 @@
 
         <section id="gallery-section">
             <div id="filter-and-text-container">
-                <div class="filters-container">
+                <fieldset class="filters-container">
+                    <legend class="visually-hidden">Filter options for gallery</legend>
+
                     <input id="all-filter" type="radio" name="filter" value="all" checked />
                     <label for="all-filter">All</label>
 
@@ -48,9 +50,9 @@
 
                     <input id="seaside-filter" type="radio" name="filter" value="seaside" />
                     <label for="seaside-filter">Seaside</label>
-                </div>
+                </fieldset>
 
-                <p class="muted-text"><span id="photo-no">18</span> Photos</p>
+                <p class="muted-text" role="status"><span id="photo-no">18</span> Photos</p>
             </div>
 
             <hr />
@@ -66,19 +68,19 @@
                 <p class="muted-text">Choose a gallery photo to include its name in your enquiry.</p>
             </div>
 
-            <a class="primary-link dark" href="/pages/contact.html">Let's make it yours <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
+            <a class="primary-link dark" href="/pages/contact.html">Let's make it yours <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
         </section>
 
-        <dialog id="gallery-modal">
+        <dialog aria-labelledby="modal-title" id="gallery-modal">
             <div class="top-nav">
-                <button id="close-modal">x</button>
+                <button aria-label="close-preview" id="close-modal">x</button>
             </div>
             <div id="modal-img-holder" class="img-holder">
                 <img src="/assets/gallery-imgs/1000043868-1.jpg" alt="Four beach-themed cakesicles decorated with sea creatures, shells and golden sand-like crumbs" />
             </div>
             <div class="content">
                 <h2 id="modal-title">Name of photo</h2>
-                <button id="enquire-design" class="primary-link dark">Enquire about this design <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
+                <button id="enquire-design" class="primary-link dark">Enquire about this design <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
                 <p class="muted-text">Share the details you love. Eve will confirm what’s possible for your order.</p>
             </div>
         </dialog>

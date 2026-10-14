@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Pop The Party Home Page</title>
+        <title>Pop Picks and Pricing | Pop the Party</title>
         <link rel="stylesheet" href="/assets/global-css/global.css" />
         <link rel="stylesheet" href="/pages/css/pick-your-pop.css" />
     </head>
@@ -11,7 +11,7 @@
         <div id="header"></div>
         <main>
             <section>
-                <p id="breadcrumb"><a href="/index.html">Home</a> / Pop Picks & Pricing</p>
+                <p id="breadcrumb" aria-label="breadcrumb"><a href="/index.html">Home</a> / Pop Picks & Pricing</p>
                 <div class="header-holder">
                     <p>PICK YOUR POP</p>
                     <h1>A little treat. <br />
@@ -50,7 +50,7 @@
                                 <p>from <span class="pop-price">$4</span> each</p>
                             </div>
                             <p>Bite-sized cake, a chocolate coating and plenty of personality.</p>
-                            <button id="enquire-cakepops" class="primary-link white">Enquire cake pops <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
+                            <button id="enquire-cakepops" class="primary-link white">Enquire cake pops <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
                         </div>
                     </article>
 
@@ -65,7 +65,7 @@
                                 <p>from <span class="pop-price">$6</span> each</p>
                             </div>
                             <p>Chocolate-coated cakesicles with drizzle, sprinkles or a marble finish</p>
-                            <button id="enquire-classic-cakesicles" class="primary-link white">Enquire cakesicles <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
+                            <button id="enquire-classic-cakesicles" class="primary-link white">Enquire cakesicles <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
                         </div>
                     </article>
 
@@ -80,7 +80,7 @@
                                <p>from <span class="pop-price">$8</span> each</p>
                             </div>
                             <p>Your colours, your theme and all the little details that make it yours.</p>
-                            <button id="enquire-custom-cakesicles" class="primary-link">Enquire custom cakesicles <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
+                            <button id="enquire-custom-cakesicles" class="primary-link">Enquire custom cakesicles <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
                         </div>
                     </article>
                 </div>
@@ -100,19 +100,20 @@
                         <li>
                             <h3>Choose your cake type</h3>
 
-                            <div class="input-container">
+                            <fieldset class="input-container">
+                                <legend class="visually-hidden">Select the type of pop</legend>
                                 <input type="radio" id="cake-pop-type" name="cake-type" value="cakepop" checked />
                                 <label for="cake-pop-type" class="label-btn">Cake pop</label>
 
                                 <input type="radio" id="cakesicle-type" name="cake-type" value="classic-cakesicle" />
                                 <label for="cakesicle-type" class="label-btn">Cakesicle</label>
-                            </div>
+                            </fieldset>
                         </li>
                         <li>
-                            <h3>Choose your cake flavour</h3>
+                            <h3 id="choose-cake-flavour">Choose your cake flavour</h3>
 
                             <div class="input-container">
-                                <select id="cake-flavour">
+                                <select aria-labelledby="choose-cake-flavour" id="cake-flavour">
                                     <option value="default" selected>Still deciding</option>
                                     <option value="vanilla">Vanilla</option>
                                     <option value="funfetti">Funfetti</option>
@@ -130,7 +131,9 @@
                         <li>
                             <h3>Pick your chocolate coating</h3>
 
-                            <div class="input-container" id="coating">
+                            <fieldset class="input-container" id="coating">
+                                <legend class="visually-hidden" >Select a pop coating</legend>
+
                                 <div class="input-container">
                                     <input id="default-coating" type="radio" name="coating" value="default" checked />
                                     <label for="default-coating">Not sure</label>
@@ -147,15 +150,16 @@
                                     <input id="dark-coating" type="radio" name="coating" value="dark-choc" />
                                     <label for="dark-coating">Dark chocolate</label>
                                 </div>
-                            </div>
+                            </fieldset>
                         </li>
                         <li>
-                            <h3>Add your colours and theme</h3>
+                            <h3 id="extra-title">Add your colours and theme</h3>
 
                             <textarea id="extra-info" 
-                                placeholder="Choose some colours, share your theme, and tell us about the details you have in mind"></textarea>
+                                placeholder="Choose some colours, share your theme, and tell us about the details you have in mind"
+                                aria-labelledby="extra-info"></textarea>
 
-                            <button id="enquire-my-pop" class="primary-link dark" type="button">Enquire about my pop <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
+                            <button id="enquire-my-pop" class="primary-link dark" type="button">Enquire about my pop <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></button>
                         </li>
                     </ol>
                     <p class="muted-text">Have an allergy or dietary requirement? Please discuss it with Eve before ordering so she can advise on ingredients and preparation.</p>
@@ -171,7 +175,7 @@
 
             <section id="steps-section">
                 <p class="eyebrow">FROM IDEA TO CELEBRATION</p>
-                <h3 class="main-title">Let's make your pops happen.</h3>
+                <h2 class="main-title">Let's make your pops happen.</h2>
 
                 <hr />
                 <div id="steps-container">
@@ -207,7 +211,7 @@
                     <p class="muted-text">Have a colour palette, a theme, or just the start of an idea?</p>
                 </div>
 
-                <a class="primary-link dark" href="/pages/contact.html">Let's plan your pops <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
+                <a class="primary-link dark" href="/pages/contact.html">Let's plan your pops <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
             </section>
         </main>
 

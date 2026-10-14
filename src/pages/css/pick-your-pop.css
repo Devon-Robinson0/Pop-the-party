@@ -323,6 +323,10 @@ input[name="coating"]:checked::after {
     margin-bottom: 30px;
 }
 
+.main-title {
+    font-size: 2.2rem;
+}
+
 @media (min-width: 768px) {
     #pop-types-container {
         display: flex;
@@ -363,7 +367,7 @@ input[name="coating"]:checked::after {
     #make-your-own {
         display: grid;
         grid-template-columns: 1.1fr .9fr;
-        padding: 40px 150px;
+        padding: 40px clamp(20px, 8vw, 150px);
 
         column-gap: 40px;
     }

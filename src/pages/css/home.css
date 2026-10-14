@@ -233,7 +233,7 @@ h3 {
     }
 
     .confetti-section .divider {
-        margin: 0 150px;
+        margin: 0 clamp(20px, 8vw, 150px);
         margin-bottom: 50px;
     }
     .divider p {

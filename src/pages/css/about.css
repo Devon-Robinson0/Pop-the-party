@@ -147,7 +147,7 @@
     #pretty-treat {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 70px 150px 40px 150px;
+        padding: 70px clamp(20px, 8vw, 150px) 40px clamp(20px, 8vw, 150px);
 
         column-gap: 80px;
     }
