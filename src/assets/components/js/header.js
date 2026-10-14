@@ -1,5 +1,5 @@
 async function loadHeader() {
-  const response = await fetch("../assets/components/header.html");
+  const response = await fetch("/assets/components/header.html");
 
   if (!response.ok) {
     throw new Error(`Could not load header: ${response.status}`);

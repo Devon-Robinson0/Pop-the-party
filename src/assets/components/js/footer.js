@@ -1,5 +1,5 @@
 async function loadFooter() {
-  const response = await fetch("../assets/components/footer.txt", {
+  const response = await fetch("/assets/components/footer.txt", {
     cache: "no-store"
   });
 

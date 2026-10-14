@@ -1,7 +1,7 @@
 <footer>
 	<article class="footer-top">
 		<div class="img-holder">
-			<img src="../assets/icons/pop-the-party-nobg-icon.png" />
+			<img src="/assets/icons/pop-the-party-nobg-icon.png" />
 		</div>
 		<div class="content">
 			<p>Handmade with love, <br>
@@ -10,8 +10,8 @@
 	</article>
 	<article class="social">
 		<h3>Follow the sweet stuff</h3>
-		<a href="https://www.instagram.com/poptheparty_nz/"><img src="../assets/icons/instagram-icon.svg" />Instagram <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
-		<a href="https://www.facebook.com/people/Pop-The-Party/61572061856951/"><img src="../assets/icons/facebook-icon.svg" />Facebook <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
+		<a href="https://www.instagram.com/poptheparty_nz/"><img src="/assets/icons/instagram-icon.svg" />Instagram <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
+		<a href="https://www.facebook.com/people/Pop-The-Party/61572061856951/"><img src="/assets/icons/facebook-icon.svg" />Facebook <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" fill="#171d3a" width="16px"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg></a>
 	</article>
 	<article class="anchors">
 		<h3>A little something sweet?</h3>
