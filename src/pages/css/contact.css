@@ -144,6 +144,10 @@ input[type="date"] {
     margin: 0;
 }
 
+#web3forms {
+    display: none;
+}
+
 @media (min-width: 768px) {
     main {
         display: grid;
@@ -180,10 +184,10 @@ input[type="date"] {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-    form div:first-child {
+    form div:nth-child(1 of :not(input[type="hidden"])) {
         grid-column: span 2;
     }
-    form *:nth-child(n + 8) {
+    form *:nth-child(n + 8 of :not(input[type="hidden"])) {
         grid-column: span 2;
     }
 }
