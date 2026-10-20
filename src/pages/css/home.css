@@ -196,9 +196,6 @@ h2 {
 .pop-type .img-holder {
     border-radius: 5px;
 }
-.pop-type:hover {
-    transform: scale(1.05);
-}
 
 #meet-eve-section {
     display: flex;

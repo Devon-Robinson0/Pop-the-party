@@ -13,20 +13,20 @@
     "alt": "A tray of cakesicles with pink, blue and orange marbling, chocolate coatings, drizzle and sprinkles.",
     "filter": "classic"
   },
-{
-"id": 3,
-"filename": "20260702_224841.jpg",
-"name": "Olympian Delights",
-"alt": "Cream-coloured cakesicles with round picture toppers depicting Greek deities, including Apollo and Athena, and golden sprinkles arranged in a row.",
-"filter": "characters"
-},
-{
-"id": 4,
-"filename": "20260619_143220.jpg",
-"name": "Pink Pony Parade",
-"alt": "Four pink and cream cakesicles decorated with black horse-themed designs and drizzle.",
-"filter": "animals"
-},
+  {
+    "id": 3,
+    "filename": "20260702_224841.jpg",
+    "name": "Olympian Delights",
+    "alt": "Cream-coloured cakesicles with round picture toppers depicting Greek deities, including Apollo and Athena, and golden sprinkles arranged in a row.",
+    "filter": "characters"
+  },
+  {
+    "id": 4,
+    "filename": "20260619_143220.jpg",
+    "name": "Pink Pony Parade",
+    "alt": "Four pink and cream cakesicles decorated with black horse-themed designs and drizzle.",
+    "filter": "animals"
+  },
   {
     "id": 5,
     "filename": "20260607_151335.jpg",
@@ -411,5 +411,68 @@
     "name": "Chocolate Shell Serenade",
     "alt": "Brown and white cakesicles decorated with chocolate shell shapes and contrasting drizzle arranged on a green plate.",
     "filter": "seaside"
+  },
+  {
+    "id": 60,
+    "filename": "1000055316.jpg",
+    "name": "Frozen Birthday Hearts",
+    "alt": "Six blue heart-shaped cake pops on wooden sticks, each featuring an Elsa picture topper and cream-coloured lettering spelling out children’s names.",
+    "filter": "characters"
+  },
+  {
+    "id": 61,
+    "filename": "1000054749.jpg",
+    "name": "Christmas Tree Cakesicles",
+    "alt": "Three white Christmas tree-shaped cakesicles decorated with green icing, red sprinkles and small festive toppers on a dark background.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 62,
+    "filename": "1000056058.jpg",
+    "name": "Witching Hour",
+    "alt": "An orange round cake pop with orange drizzle and a black witch hat decoration against a dark background.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 63,
+    "filename": "1000056055.jpg",
+    "name": "Mummy Mischief",
+    "alt": "A round white cake pop with criss-crossed white icing resembling mummy bandages and two large candy eyes.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 64,
+    "filename": "1000056060.jpg",
+    "name": "Christmas Gift Bites",
+    "alt": "Three square Christmas treats on red fabric, decorated with festive bells, gold pearls and a white ribbon design.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 65,
+    "filename": "1000056059.jpg",
+    "name": "Festive Tree Trio",
+    "alt": "Three Christmas tree-shaped cakesicles on red fabric, including two dark green trees with gold pearls and a white tree with green drizzle and red sprinkles.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 66,
+    "filename": "1000056053.jpg",
+    "name": "Halloween Fright Night",
+    "alt": "A collection of Halloween cake pops decorated with a ghost, mummy, witch hat, bats, black cat and Boo lettering in orange, black and white.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 67,
+    "filename": "1000056057.jpg",
+    "name": "Little Ghost",
+    "alt": "A round dark grey cake pop decorated with a white ghost with raised arms against a dark background.",
+    "filter": "celebrations"
+  },
+  {
+    "id": 68,
+    "filename": "1000056054.jpg",
+    "name": "Boo-tiful Treat",
+    "alt": "An orange round cake pop with orange drizzle and raised purple Boo lettering against a dark background.",
+    "filter": "celebrations"
   }
 ]

@@ -71,6 +71,10 @@ p, span, a, label {
     font-size: 14px;
 }
 
+footer :focus-visible {
+    outline-color: var(--accent);
+}
+
 *:focus {
     outline: 2px solid var(--heading-accent);
     outline-offset: 3px;
